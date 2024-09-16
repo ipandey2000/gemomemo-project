@@ -1,6 +1,7 @@
 // HomePageScreen.js
 "use client";
 
+import MostTrending from "./MostTrending/mostTrending";
 import CustomNavbar from "./Navbar/navbar";
 import Sidebar from "./SideNavbar/sideNavbar";
 import DaysGoneComponent from "./TopDayGoneSection/topDayGoneSection";
@@ -17,6 +18,7 @@ export default function HomePageScreen() {
       <div style={{ width: '95%' }}>
         <CustomNavbar />
         <DaysGoneComponent />
+        <MostTrending />
       </div>
     </div>
   );

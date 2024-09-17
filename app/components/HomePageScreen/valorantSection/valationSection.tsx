@@ -1,6 +1,6 @@
 import React from "react";
 
-const EvalationSection = () => {
+const VlationSection = () => {
   return (
     <div className="bg-black text-white p-8 rounded-lg shadow-lg w-full mx-auto space-y-6 relative flex flex-col items-center justify-center">
       {/* Top Right - Friends Playing Status and Rating */}
@@ -16,7 +16,7 @@ const EvalationSection = () => {
       </div>
 
       {/* Game Title */}
-      <h1 className="text-6xl font-bold mb-2 text-center">Evolution</h1>
+      <h1 className="text-6xl font-bold mb-2 text-center">Valorant</h1>
 
       {/* Release Date */}
       <div className="bg-gray-800 text-gray-400 px-4 py-2 rounded-md inline-block text-center">
@@ -56,4 +56,4 @@ const EvalationSection = () => {
   );
 };
 
-export default EvalationSection;
+export default VlationSection;

@@ -10,12 +10,14 @@ import MostTrending from "./MostTrending/mostTrending";
 import CustomNavbar from "./Navbar/navbar";
 import Sidebar from "./SideNavbar/sideNavbar";
 import DaysGoneComponent from "./TopDayGoneSection/topDayGoneSection";
+import VlationSection from "./valorantSection/valationSection";
+import Warlords from "./WarlordsSection/warlordsSection";
 
 export default function HomePageScreen() {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen  ">
       {/* Sidebar with 5% width and right border */}
-      <div className="border-r border-gray-300" style={{ width: "5%" }}>
+      <div className="border-r border-gray-300 " style={{ width: "5%" }}>
         <Sidebar />
       </div>
 
@@ -25,6 +27,8 @@ export default function HomePageScreen() {
         <DaysGoneComponent />
         <MostTrending />
         <EvalationSection />
+        <VlationSection  />
+        <Warlords/>
         <FilterSidebar />
         <Bigbanner />
         <Arens />

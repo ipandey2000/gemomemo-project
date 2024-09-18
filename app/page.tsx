@@ -1,4 +1,4 @@
-import HomePageScreen from "./components/HomePageScreen";
+import HomePageScreen from "./HomePageScreen/page";
 
 export default function Home() {
   return (

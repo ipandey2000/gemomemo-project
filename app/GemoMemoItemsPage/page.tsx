@@ -4,10 +4,11 @@ import EvalationSection from "../HomePageScreen/EvalationSection/evalationSectio
 import Footer from "../HomePageScreen/Footer/footer";
 import VlationSection from "../HomePageScreen/valorantSection/valationSection";
 import Warlords from "../HomePageScreen/WarlordsSection/warlordsSection";
+import withAuth from "../withAuth/page";
 import FilterSidebar from "./FilterSection/filterSection";
 import NavbarItemsScreen from "./NavbarScreen/navbarItemScreen";
 
-export default function GamememoItemScreenPage() {
+const GamememoItemScreenPage: React.FC = () => {
   return (
     <div className="flex-1">
       <NavbarItemsScreen />
@@ -18,4 +19,5 @@ export default function GamememoItemScreenPage() {
       <Footer />
     </div>
   );
-}
+};
+export default withAuth(GamememoItemScreenPage);

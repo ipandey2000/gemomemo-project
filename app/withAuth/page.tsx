@@ -2,15 +2,15 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
+// HOC that wraps protected components
 const withAuth = (WrappedComponent: React.FC) => {
   const ProtectedRoute: React.FC = (props) => {
     const router = useRouter();
 
     useEffect(() => {
       const token = localStorage.getItem("authToken");
-
       if (!token) {
-        router.push("/loginform"); // Redirect to login if not authenticated
+        router.push("/loginform");
       }
     }, [router]);
 

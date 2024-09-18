@@ -2,7 +2,7 @@
 
 import NavbarItemsScreen from "../GemoMemoItemsPage/NavbarScreen/navbarItemScreen";
 import Footer from "../HomePageScreen/Footer/footer";
-import withAuth from "../withAuth/page";
+import withAuth from "../components/hoc/withAuth";
 import Arens from "./Arens/arens";
 import LeagendOfLegendes from "./LeageOfLegends/leagesOfLegends";
 import NameScreen from "./NameScreen/nameScreen";

@@ -1,6 +1,5 @@
-"use client";
-
-import withAuth from "../withAuth/page";
+// app/homepage/page.tsx (or wherever your HomePageScreen is located)
+import withAuth from "../components/hoc/withAuth";
 import EvalationSection from "./EvalationSection/evalationSection";
 import Footer from "./Footer/footer";
 import MostTrending from "./MostTrending/mostTrending";
@@ -13,12 +12,12 @@ import Warlords from "./WarlordsSection/warlordsSection";
 const HomePageScreen: React.FC = () => {
   return (
     <div className="flex h-screen">
-      {/* Sidebar with dynamic width and border */}
+      {/* Sidebar */}
       <div className="border-r border-gray-300 w-16 md:w-20 lg:w-24">
         <Sidebar />
       </div>
 
-      {/* Main content with flexible width */}
+      {/* Main content */}
       <div className="flex-1 overflow-y-auto">
         <CustomNavbar />
         <DaysGoneComponent />
@@ -26,11 +25,10 @@ const HomePageScreen: React.FC = () => {
         <EvalationSection />
         <VlationSection />
         <Warlords />
-
         <Footer />
       </div>
     </div>
   );
 };
 
-export default withAuth(HomePageScreen);
+export default withAuth(HomePageScreen); // Protect HomePageScreen

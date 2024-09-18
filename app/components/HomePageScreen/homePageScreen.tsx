@@ -1,10 +1,10 @@
-// HomePageScreen.js
 "use client";
 
-import Arens from "./Arens/arens";
+import Arens from "../GemoDateDetails/Arens/arens";
 import Bigbanner from "./BigBanner/bigbanner";
 import EvalationSection from "./EvalationSection/evalationSection";
-import FilterSidebar from "./FilterSection/filterSection";
+import FilterSidebar from "../GemoMemoItemsPage/FilterSection/filterSection";
+import Footer from "./Footer/footer";
 import Legends from "./Legends/legends";
 import MostTrending from "./MostTrending/mostTrending";
 import CustomNavbar from "./Navbar/navbar";
@@ -13,26 +13,28 @@ import DaysGoneComponent from "./TopDayGoneSection/topDayGoneSection";
 import VlationSection from "./valorantSection/valationSection";
 import Warlords from "./WarlordsSection/warlordsSection";
 
-export default function HomePageScreen() {
+export default function HomePageScreen ()
+{
   return (
-    <div className="flex h-screen  ">
-      {/* Sidebar with 5% width and right border */}
-      <div className="border-r border-gray-300 " style={{ width: "5%" }}>
+    <div className="flex h-screen">
+      {/* Sidebar with dynamic width and border */}
+      <div className="border-r border-gray-300 w-16 md:w-20 lg:w-24">
         <Sidebar />
       </div>
 
-      {/* Main content with 95% width */}
-      <div style={{ width: "95%" }}>
+      {/* Main content with flexible width */}
+      <div className="flex-1 overflow-y-auto">
         <CustomNavbar />
         <DaysGoneComponent />
         <MostTrending />
         <EvalationSection />
-        <VlationSection  />
-        <Warlords/>
-        <FilterSidebar />
+        <VlationSection />
+        <Warlords />
+ {/* <FilterSidebar /> */}
         <Bigbanner />
         <Arens />
-        <Legends />
+        <Legends /> 
+        <Footer />
       </div>
     </div>
   );

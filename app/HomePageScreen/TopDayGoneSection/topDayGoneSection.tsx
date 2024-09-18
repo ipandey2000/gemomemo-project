@@ -1,10 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css";
-import { FaApple } from "react-icons/fa";
 import Image from "next/image";
 import Logo from "../../public/Frame 398.png";
-import { BiLogOut } from "react-icons/bi";
 const DaysGoneComponent = () => {
   useEffect(() => {
     AOS.init({
@@ -36,8 +33,8 @@ const DaysGoneComponent = () => {
         struggling to survive in a post-apocalyptic world filled with
         zombie-like creatures called Freaks. Though players are surrounded by
         death and danger on all sides, the world that they get to explore feels
-        as though it's truly alive, which can encourage players to take risks
-        when they probably shouldn't.
+        as though it truly alive, which can encourage players to take risks when
+        they probably should
       </p>
 
       <div

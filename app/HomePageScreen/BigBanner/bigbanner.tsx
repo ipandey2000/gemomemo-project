@@ -31,11 +31,6 @@ const Bigbanner = () => {
         {/* iOS Available Icon */}
         <div className="flex items-center space-x-2">
           <span className="text-sm text-gray-400">Available on:</span>
-          <img
-            src="/ios-icon.png" // Replace with an actual icon or image link
-            alt="iOS"
-            className="w-6 h-6"
-          />
         </div>
       </div>
 
@@ -62,8 +57,7 @@ const Bigbanner = () => {
         </h2>
         <p className="text-lg leading-relaxed mt-4">
           Whether you like to dive straight into the fray, support your
-          teammates, or something in between, there's a spot for you on the
-          Rift.
+          teammates, or something in between, there a spot for you on the Rift.
         </p>
       </div>
     </div>

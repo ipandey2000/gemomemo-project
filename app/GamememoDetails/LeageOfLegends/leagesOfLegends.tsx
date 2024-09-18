@@ -64,7 +64,7 @@ export default function LeagendOfLegendes() {
           </h2>
           <p className="mt-4 text-lg">
             Whether you like to dive straight into the fray, support your
-            teammates, or something in between, there's a spot for you on the
+            teammates, or something in between, there a spot for you on the
             Rift.
           </p>
         </div>

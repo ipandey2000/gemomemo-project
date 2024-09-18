@@ -1,16 +1,6 @@
-import { useEffect } from "react";
-import AOS from "aos";
 import Image from "next/image";
 import Logo from "../../public/Frame 398.png";
 const DaysGoneComponent = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      easing: "ease-in-out",
-      once: true,
-    });
-  }, []);
-
   return (
     <div className="text-white p-10 rounded-lg shadow-lg ">
       <h1 className="text-7xl font-bold mb-4">Days Gone</h1>

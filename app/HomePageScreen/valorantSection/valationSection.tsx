@@ -1,15 +1,12 @@
 import React from "react";
-import Image from 'next/image';
-import Logo from '../../../public/Frame 398.png'
-import { FaWindows, FaApple } from 'react-icons/fa';
-import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs';
-const VlationSection = () =>
-{
+
+import { FaWindows, FaApple } from "react-icons/fa";
+import { BsStarFill, BsStar } from "react-icons/bs";
+const VlationSection = () => {
   return (
     <div className="bg-black text-white py-10 px-8">
       {/* Container for main content */}
       <div className="relative flex flex-col justify-center items-start max-w-4xl mx-auto space-y-8">
-
         {/* Friends and Ratings */}
         <div className="absolute top-0 right-0 flex space-x-4 items-center text-sm">
           <div className="flex items-center text-green-400 space-x-2">
@@ -34,8 +31,16 @@ const VlationSection = () =>
         </div>
 
         {/* Game Description */}
-        <p className="text-lg leading-relaxed max-w-2xl" style={{ lineHeight: "40px" }}>
-          Players assume the role of Deacon St. John, a former bounty hunter struggling to survive in a post-apocalyptic world filled with zombie-like creatures called Freaks. Though players are surrounded by death and danger on all sides, the world that they get to explore feels as though it's truly alive, which can encourage players to take risks when they probably shouldn't.
+        <p
+          className="text-lg leading-relaxed max-w-2xl"
+          style={{ lineHeight: "40px" }}
+        >
+          Players assume the role of Deacon St. John, a former bounty hunter
+          struggling to survive in a post-apocalyptic world filled with
+          zombie-like creatures called Freaks. Though players are surrounded by
+          death and danger on all sides, the world that they get to explore
+          feels as though truly alive, which can encourage players to take risks
+          when they probably.
         </p>
 
         {/* CTA Button and Platform Availability */}

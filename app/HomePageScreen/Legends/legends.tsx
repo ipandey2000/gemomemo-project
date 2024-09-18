@@ -40,8 +40,6 @@ const Legends = () => {
               <span className="text-gray-400">Available on:</span>
               <div className="flex items-center space-x-2">
                 {/* Add the images for platforms (e.g., Windows and iOS icons) */}
-                <img src="/windows.png" alt="Windows" className="w-6 h-6" />
-                <img src="/ios.png" alt="iOS" className="w-6 h-6" />
               </div>
             </div>
           </div>

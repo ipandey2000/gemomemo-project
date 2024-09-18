@@ -1,11 +1,7 @@
 "use client";
 
-import Arens from "../GemoDateDetails/Arens/arens";
-import Bigbanner from "./BigBanner/bigbanner";
 import EvalationSection from "./EvalationSection/evalationSection";
-import FilterSidebar from "../GemoMemoItemsPage/FilterSection/filterSection";
 import Footer from "./Footer/footer";
-import Legends from "./Legends/legends";
 import MostTrending from "./MostTrending/mostTrending";
 import CustomNavbar from "./Navbar/navbar";
 import Sidebar from "./SideNavbar/sideNavbar";
@@ -13,8 +9,7 @@ import DaysGoneComponent from "./TopDayGoneSection/topDayGoneSection";
 import VlationSection from "./valorantSection/valationSection";
 import Warlords from "./WarlordsSection/warlordsSection";
 
-export default function HomePageScreen ()
-{
+export default function HomePageScreen() {
   return (
     <div className="flex h-screen">
       {/* Sidebar with dynamic width and border */}
@@ -30,10 +25,7 @@ export default function HomePageScreen ()
         <EvalationSection />
         <VlationSection />
         <Warlords />
- {/* <FilterSidebar /> */}
-        <Bigbanner />
-        <Arens />
-        <Legends /> 
+
         <Footer />
       </div>
     </div>

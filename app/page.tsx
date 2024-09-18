@@ -1,12 +1,9 @@
-import Route from "./components/Routes/route";
+import HomePageScreen from "./components/HomePageScreen";
 
-
-
-export default function Home ()
-{
+export default function Home() {
   return (
     <div className="  bg-black">
-      <Route />
+      <HomePageScreen />
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 // Sample game data
@@ -40,10 +41,12 @@ const gamesData = [
   },
 ];
 
-const MostTrending = () =>
-{
+const MostTrending = () => {
   return (
-    <div className="bg-black 900 text-yellow-100 " style={{ paddingBottom: '100px' }}>
+    <div
+      className="bg-black 900 text-yellow-100 "
+      style={{ paddingBottom: "100px" }}
+    >
       {/* Header */}
       <div className="flex justify-between items-center py-8 px-12">
         <h1 className="text-4xl font-bold tracking-widest">MOST TRENDING</h1>
@@ -58,7 +61,7 @@ const MostTrending = () =>
 
       {/* Game Cards */}
       <div className="flex overflow-x-auto px-12 space-x-8 scrollbar-hide">
-        {gamesData.map( ( game ) => (
+        {gamesData.map((game) => (
           <div
             key={game.id}
             className="bg-yellow-100 border border-yellow-300 rounded-xl p-4 shadow-lg w-64 relative"
@@ -73,9 +76,9 @@ const MostTrending = () =>
               <h2 className="text-2xl font-bold text-gray-800">{game.name}</h2>
 
               <div className="flex items-center mt-1 text-yellow-500">
-                <span>{"⭐".repeat( game.rating )}</span>
+                <span>{"⭐".repeat(game.rating)}</span>
                 <span className="text-gray-400 ml-1">
-                  {"☆".repeat( 5 - game.rating )}
+                  {"☆".repeat(5 - game.rating)}
                 </span>
               </div>
 
@@ -89,11 +92,11 @@ const MostTrending = () =>
                 {game.price}
               </p>
               <button className="bg-orange-500 text-white rounded-md px-4 py-2 hover:bg-orange-600 transition">
-                Buy Now
+                <Link href="/login"> Buy Now</Link>
               </button>
             </div>
           </div>
-        ) )}
+        ))}
       </div>
     </div>
   );

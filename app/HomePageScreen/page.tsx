@@ -14,12 +14,12 @@ const HomePageScreen: React.FC = () =>
 {
   return (
     <div className="flex h-screen">
-      {/* Sidebar */}
+  
       <div className="border-r border-gray-300 w-16 md:w-20 lg:w-24">
         <Sidebar />
       </div>
 
-      {/* Main content */}
+
       <div className="flex-1 overflow-y-auto">
         <CustomNavbar />
         <DaysGoneComponent />
@@ -33,4 +33,4 @@ const HomePageScreen: React.FC = () =>
   );
 };
 
-export default withAuth( HomePageScreen ); // Protect HomePageScreen
+export default withAuth( HomePageScreen ); 

@@ -5,7 +5,6 @@ const DaysGoneComponent = () => {
     <div className="text-white p-10 rounded-lg shadow-lg ">
       <h1 className="text-7xl font-bold mb-4">Days Gone</h1>
 
-      {/* Release Date */}
       <div className="bg-gray-800 text-gray-400 px-2  rounded-md inline-block mb-8">
         <span
           className="text-sm"
@@ -45,12 +44,12 @@ const DaysGoneComponent = () => {
         </div>
       </div>
 
-      {/* Purchase Price */}
+
       <div className="mb-8">
         <span className="text-white ">Buy now for $40 only</span>
       </div>
 
-      {/* Friends Playing Status */}
+    
       <div className=" flex items-center space-x-2">
         <span className="inline-block w-2 h-2 bg-green-500 rounded-full"></span>
         <span>40 of your friends are playing</span>

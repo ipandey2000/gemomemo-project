@@ -86,7 +86,7 @@ const NavbarItemsScreen = () => {
           </NavbarItem>
         </NavbarContent>
 
-        {/* Right Side: Search Bar and Icons */}
+  
         <div className="flex items-center gap-4 flex-wrap w-full sm:w-auto justify-end">
           {/* Search Input */}
           <Input
@@ -104,7 +104,7 @@ const NavbarItemsScreen = () => {
             style={{ borderRadius: "20px" }}
           />
 
-          {/* Icons: Notification Bell, Shopping Bag, User */}
+        
           <Badge color="secondary" shape="circle">
             <div className="border-2 border-gray rounded-full p-2 hover:border-gold">
               <BellIcon
@@ -125,7 +125,7 @@ const NavbarItemsScreen = () => {
 
           <Badge color="secondary" shape="circle">
             <div className="border-2 border-gray rounded-full p-2 hover:border-gold">
-              {/* Placeholder for User Icon */}
+       
             </div>
           </Badge>
         </div>

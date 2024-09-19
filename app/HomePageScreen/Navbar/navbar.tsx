@@ -51,12 +51,12 @@ const SearchIcon: React.FC<SearchIconProps> = ({
   </svg>
 );
 
-// CustomNavbar Component
+
 const CustomNavbar = () => {
   return (
     <NextUINavbar isBordered>
       <div className="flex flex-col sm:flex-row justify-between items-center w-full p-4">
-        {/* Left Side: Navigation Links */}
+
         <NavbarContent className="flex items-center gap-6 flex-wrap">
           <NavbarItem>
             <Link color="foreground" href="#">
@@ -77,7 +77,6 @@ const CustomNavbar = () => {
           </NavbarItem>
         </NavbarContent>
 
-        {/* Right Side: Search Bar and Icons */}
         <div className="flex items-center gap-4 flex-wrap mt-2 sm:mt-0">
           <Input
             classNames={{

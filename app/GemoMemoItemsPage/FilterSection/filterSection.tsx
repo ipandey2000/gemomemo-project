@@ -89,10 +89,10 @@ const FilterSidebar: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white">
       <div className="container mx-auto px-8 py-6">
         <div className="flex flex-wrap lg:flex-nowrap space-x-8">
-          {/* Sidebar Filters */}
+   
           <aside className="w-full lg:w-1/5 bg-gray-800 p-6 rounded-lg h-auto">
             <div className="text-white">
-              {/* Categories */}
+          
               <div className="mb-8">
                 <h2 className="text-xl font-semibold mb-4">Categories</h2>
                 <ul>

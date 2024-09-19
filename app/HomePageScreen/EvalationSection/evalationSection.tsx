@@ -4,9 +4,9 @@ import { BsStarFill, BsStar } from "react-icons/bs";
 const EvalationSection = () => {
   return (
     <div className="bg-black text-white py-10 px-8">
-      {/* Container for main content */}
+
       <div className="relative flex flex-col justify-center items-start max-w-4xl mx-auto space-y-8">
-        {/* Friends and Ratings */}
+
         <div className="absolute top-0 right-0 flex space-x-4 items-center text-sm">
           <div className="flex items-center text-green-400 space-x-2">
             <span className="inline-block w-2 h-2 bg-green-500 rounded-full"></span>
@@ -21,15 +21,15 @@ const EvalationSection = () => {
           </div>
         </div>
 
-        {/* Game Title */}
+  
         <h1 className="text-7xl font-bold">Evolution</h1>
 
-        {/* Release Date */}
+
         <div className="bg-gray-800 text-gray-400 px-4 py-2 rounded-md inline-block">
           <span className="text-sm">RELEASE DATE: 30TH DECEMBER</span>
         </div>
 
-        {/* Game Description */}
+   
         <p
           className="text-lg leading-relaxed max-w-2xl"
           style={{ lineHeight: "40px" }}
@@ -42,7 +42,7 @@ const EvalationSection = () => {
           risks when they probably .
         </p>
 
-        {/* CTA Button and Platform Availability */}
+    
         <div className="flex items-center space-x-6">
           <button className="bg-orange-500 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-orange-600 transition">
             Play Now
@@ -55,7 +55,7 @@ const EvalationSection = () => {
           </div>
         </div>
 
-        {/* Purchase Price */}
+   
         <div className="mt-4">
           <span className="text-xl text-white">Buy now for $40 only</span>
         </div>

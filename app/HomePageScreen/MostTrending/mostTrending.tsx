@@ -59,7 +59,7 @@ const MostTrending = () => {
         </a>
       </div>
 
-      {/* Game Cards */}
+   
       <div className="flex overflow-x-auto px-12 space-x-8 scrollbar-hide">
         {gamesData.map((game) => (
           <div

@@ -1,23 +1,26 @@
-"use client";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Cookies from "js-cookie";
 
-// HOC that wraps protected components
-const withAuth = (WrappedComponent: React.FC) => {
-  const ProtectedRoute: React.FC = (props) => {
+const withAuth = ( Component: React.FC<any> ) =>
+{
+  const AuthenticatedComponent: React.FC<any> = ( props ) =>
+  {
     const router = useRouter();
 
-    useEffect(() => {
-      const token = localStorage.getItem("authToken");
-      if (!token) {
-        router.push("/loginform");
+    useEffect( () =>
+    {
+      const token = Cookies.get( "authToken" );
+      if ( !token )
+      {
+        router.push( "/loginform" );
       }
-    }, [router]);
+    }, [router] );
 
-    return <WrappedComponent {...props} />;
+    return <Component {...props} />;
   };
 
-  return ProtectedRoute;
+  return AuthenticatedComponent;
 };
 
 export default withAuth;

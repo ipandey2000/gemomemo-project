@@ -1,5 +1,5 @@
 // app/homepage/page.tsx (or wherever your HomePageScreen is located)
-import withAuth from "../components/hoc/page";
+
 import EvalationSection from "./EvalationSection/evalationSection";
 import Footer from "./Footer/footer";
 import MostTrending from "./MostTrending/mostTrending";
@@ -31,4 +31,4 @@ const HomePageScreen: React.FC = () => {
   );
 };
 
-export default withAuth(HomePageScreen); // Protect HomePageScreen
+export default HomePageScreen; // Protect HomePageScreen

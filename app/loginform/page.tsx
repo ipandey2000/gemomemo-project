@@ -2,44 +2,53 @@
 import { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import { useRouter } from "next/navigation"; // For navigation after login
 
-const Login: React.FC = () => {
-  const [email, setEmail] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
-  const [errorMessage, setErrorMessage] = useState<string>("");
+const Login: React.FC = () =>
+{
+  const [email, setEmail] = useState<string>( "" );
+  const [password, setPassword] = useState<string>( "" );
+  const [errorMessage, setErrorMessage] = useState<string>( "" );
   const router = useRouter(); // For redirecting
 
-  useEffect(() => {
+  useEffect( () =>
+  {
     // Redirect to home if token exists
-    const token = localStorage.getItem("authToken");
-    if (token) {
-      router.push("/"); // Redirect to home if already logged in
+    const token = localStorage.getItem( "authToken" );
+    if ( token )
+    {
+      router.push( "/" ); // Redirect to home if already logged in
     }
-  }, [router]);
+  }, [router] );
 
-  const generateToken = (): string => {
-    return Math.random().toString(36).substr(2);
+  const generateToken = (): string =>
+  {
+    return Math.random().toString( 36 ).substr( 2 );
   };
 
-  const handleLogin = (e: FormEvent<HTMLFormElement>) => {
+  const handleLogin = ( e: FormEvent<HTMLFormElement> ) =>
+  {
     e.preventDefault();
 
-    if (email === "rahul@2021" && password === "rahul") {
+    if ( email === "rahul@2021" && password === "rahul" )
+    {
       const token = generateToken();
-      localStorage.setItem("authToken", token);
-      console.log("Login successful, Token:", token);
+      localStorage.setItem( "authToken", token );
+      console.log( "Login successful, Token:", token );
 
-      router.push("/"); // Redirect to home after successful login
-    } else {
-      setErrorMessage("Invalid email or password");
+      router.push( "/" ); // Redirect to home after successful login
+    } else
+    {
+      setErrorMessage( "Invalid email or password" );
     }
   };
 
-  const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setEmail(e.target.value);
+  const handleEmailChange = ( e: ChangeEvent<HTMLInputElement> ) =>
+  {
+    setEmail( e.target.value );
   };
 
-  const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setPassword(e.target.value);
+  const handlePasswordChange = ( e: ChangeEvent<HTMLInputElement> ) =>
+  {
+    setPassword( e.target.value );
   };
 
   return (

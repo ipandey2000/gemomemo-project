@@ -1,5 +1,5 @@
 // app/gamememo-items/page.tsx
-import withAuth from "../components/hoc/page";
+
 import EvalationSection from "../HomePageScreen/EvalationSection/evalationSection";
 import Footer from "../HomePageScreen/Footer/footer";
 import VlationSection from "../HomePageScreen/valorantSection/valationSection";
@@ -20,4 +20,4 @@ const GamememoItemScreenPage: React.FC = () => {
   );
 };
 
-export default withAuth(GamememoItemScreenPage); // Protect GamememoItemScreenPage
+export default GamememoItemScreenPage; // Protect GamememoItemScreenPage

@@ -1,5 +1,6 @@
 // app/gamememo-items/page.tsx
-
+"use client"
+import withAuth from "../components/hoc/page";
 import EvalationSection from "../HomePageScreen/EvalationSection/evalationSection";
 import Footer from "../HomePageScreen/Footer/footer";
 import VlationSection from "../HomePageScreen/valorantSection/valationSection";
@@ -7,7 +8,8 @@ import Warlords from "../HomePageScreen/WarlordsSection/warlordsSection";
 import FilterSidebar from "./FilterSection/filterSection";
 import NavbarItemsScreen from "./NavbarScreen/navbarItemScreen";
 
-const GamememoItemScreenPage: React.FC = () => {
+const GamememoItemScreenPage: React.FC = () =>
+{
   return (
     <div className="flex-1">
       <NavbarItemsScreen />
@@ -20,4 +22,4 @@ const GamememoItemScreenPage: React.FC = () => {
   );
 };
 
-export default GamememoItemScreenPage; // Protect GamememoItemScreenPage
+export default withAuth( GamememoItemScreenPage ); // Protect GamememoItemScreenPage

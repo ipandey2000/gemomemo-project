@@ -1,3 +1,6 @@
+"use client"
+import withAuth from "../components/hoc/page";
+
 import NavbarItemsScreen from "../GemoMemoItemsPage/NavbarScreen/navbarItemScreen";
 import Footer from "../HomePageScreen/Footer/footer";
 import Arens from "./Arens/arens";
@@ -18,4 +21,4 @@ const GamememoDetailsScreenPage: React.FC = () =>
     </div>
   );
 };
-export default GamememoDetailsScreenPage ;
+export default withAuth( GamememoDetailsScreenPage );

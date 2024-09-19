@@ -1,5 +1,6 @@
 // app/homepage/page.tsx (or wherever your HomePageScreen is located)
-
+"use client"
+import withAuth from "../components/hoc/page";
 import EvalationSection from "./EvalationSection/evalationSection";
 import Footer from "./Footer/footer";
 import MostTrending from "./MostTrending/mostTrending";
@@ -9,7 +10,8 @@ import DaysGoneComponent from "./TopDayGoneSection/topDayGoneSection";
 import VlationSection from "./valorantSection/valationSection";
 import Warlords from "./WarlordsSection/warlordsSection";
 
-const HomePageScreen: React.FC = () => {
+const HomePageScreen: React.FC = () =>
+{
   return (
     <div className="flex h-screen">
       {/* Sidebar */}
@@ -31,4 +33,4 @@ const HomePageScreen: React.FC = () => {
   );
 };
 
-export default HomePageScreen; // Protect HomePageScreen
+export default withAuth( HomePageScreen ); // Protect HomePageScreen

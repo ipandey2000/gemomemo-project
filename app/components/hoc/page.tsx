@@ -1,8 +1,9 @@
+"use client"
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 
-const withAuth = ( Component: React.FC<any> ) =>
+const withAuth = ( Component: any ) =>
 {
   const AuthenticatedComponent: React.FC<any> = ( props ) =>
   {

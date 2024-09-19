@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, ChangeEvent, FormEvent, useEffect } from "react";
+import { useState, FormEvent, useEffect } from "react";
 import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
 

@@ -6,18 +6,17 @@ import LeagendOfLegendes from "./LeageOfLegends/leagesOfLegends";
 import NameScreen from "./NameScreen/nameScreen";
 import ReviewSection from "./ReviewSection/reviewSection";
 
-const GamememoDetailsScreenPage: React.FC = () => {
+const GamememoDetailsScreenPage: React.FC = () =>
+{
   return (
     <div className="flex-1 ">
       <NavbarItemsScreen />
-
       <LeagendOfLegendes />
       <NameScreen />
       <Arens />
       <ReviewSection />
-
       <Footer />
     </div>
   );
 };
-export default withAuth(GamememoDetailsScreenPage);
+export default withAuth( GamememoDetailsScreenPage );
